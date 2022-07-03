@@ -17,7 +17,13 @@ a {
 body {
     display: flex;
     flex-direction: column;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh; 
 }
+
+.content {
+    flex: 1 0 auto;
+} 
 
 .name-logo {
     display: inline-flex;
@@ -143,26 +149,28 @@ h1 {
     font-size: 10px;
 }
 
+.review {
+    background-color: #e5e7eb;
+}
+
 .review i {
     float: left;
     margin-left: 25%;
     margin-right: 25%;
     padding-top: 50px;
     padding-bottom: 3px;
+    text-align: left;
 }
 
 .review p {
-    float: right;
-    margin-right: 25%;
+    margin-right: 25%; 
     padding-bottom: 50px;
+    text-align: right;
 }
 
-.review {
-    background-color: #e5e7eb;
-}
 
 .blue-box {
-    margin: 50px 20%;
+    margin: 7% 20%;  
     background-color: #3882F6;
     padding: 25px 50px;
     color: white;
@@ -173,6 +181,13 @@ h1 {
 
 .text p {
     font-size: 13px;    
+}
+
+.space {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .blue-box button {    
