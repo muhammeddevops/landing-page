@@ -1,11 +1,34 @@
+@font-face {
+    font-family: hero-font;
+    src: url(./hero/Hero.otf);
+}
+
 * {
     margin: 0;
+    padding: 0;
+    font-family: hero-font;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
 }
 body {
     display: flex;
     flex-direction: column;
-
 }
+
+.name-logo {
+    display: inline-flex;
+}
+
+.name-logo img {
+    width: 50px;
+    height: auto;
+    margin-left: 8px;
+}
+
 
 header {
     background-color: #1F2937;
@@ -13,14 +36,23 @@ header {
     display: flex;
     justify-content: space-between;
     color: white;
+    font-family: hero-font, bold;
+    font-weight: 900;
     font-size: 24px;
     align-items: center;
+    padding-left: 5%;
 }
+
 
 header ul {
     list-style: none;
     display: flex;
     font-size: 14px;
+    padding-right: 5%;
+}
+
+li {
+    margin: 5px;
 }
 
 .description {
@@ -29,6 +61,8 @@ header ul {
     background-color: #1F2937;
     display: flex;
     justify-content: space-around;
+    padding-left: 15px;
+    padding-top: 25px;
 }
 
 .left h1 {
@@ -38,8 +72,9 @@ header ul {
 .description img {
     max-width: 380px;
     height: auto;
-    float: right;
-    padding: 20px;
+    padding: 20px 30px 40px 15px;
+    border-radius: 30px;
+    
 }
 
 .left {
@@ -47,7 +82,7 @@ header ul {
     height: auto;
 }
 
-button {
+.description button {
     background-color: #3882F6; /* Blue */
     border: none;
     color: white;
@@ -56,6 +91,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    border-radius: 7px;
 }
 
 h1 {
@@ -64,6 +100,7 @@ h1 {
 
 .description p {
     margin-bottom: 15px;
+    color: #e5e7eb;
 }
 
 .random-info {
@@ -75,6 +112,7 @@ h1 {
 
 .random-info h2 {
     padding-top: 15px;
+    color: #1F2937;
 }
 
 
@@ -93,10 +131,11 @@ h1 {
 }
 
 .box img {
-    max-width: 90px;
+    width: 120px;
     height: auto;
     border: 3px solid #1F2937;
     padding: 0%;
+    border-radius: 5px;
 }
 
 .box {
@@ -123,40 +162,31 @@ h1 {
 }
 
 .blue-box {
-  /*  margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 20%;
-    margin-right: 20%; */
     margin: 50px 20%;
     background-color: #3882F6;
     padding: 25px 50px;
-    height: 60px;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    border-radius: 10px;
 }
 
-.blue-box .text {
-    float: left;
+.text p {
+    font-size: 13px;    
 }
 
-.blue-box button {
-/*    float: right;
-    border: 2px solid white;
-    font-size: 12px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 8px;
-    padding-right: 8px; */
+.blue-box button {    
     background-color: #3882F6; /* Blue */
     border: 1px solid white;
     color: white;
-    padding: 1px 2px;
+    padding: 3px 12px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 10px;
+/*  display: inline-block; */
+    font-size: 12px;
+    border-radius: 4px;
 }
+
 
 footer {
     background-color: #1F2937;
